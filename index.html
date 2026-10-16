@@ -209,7 +209,7 @@ body.gate-locked{overflow:hidden}
   const gateError = document.getElementById('gateError');
   let currentCaptcha = '';
   function newCaptcha() {
-    const chars = 'biBU855j55850JN98vgTH5ah9688akbhJH';
+    const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
     currentCaptcha = '';
     for (let i = 0; i < 5; i++) currentCaptcha += chars[Math.floor(Math.random() * chars.length)];
     captchaDisplay.textContent = currentCaptcha;
